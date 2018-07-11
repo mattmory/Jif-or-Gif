@@ -6,22 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jiff vs. Gif</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div id="buttons-view"></div>
-       <form id="animal-intake">
-            <label for="movie-input">Add an animal.</label>
-            <input type="text" id="animal-input">
-            <br>
-            <!-- Button triggers new movie to be added -->
-            <input id="add-animal" type="submit" value="Add an animal">
-        </form>
-        <div id="the-gifs"></div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="assets/javascript/app.js"></script>
+    <div class="row">
+        <div class="col-md-8">
+            <div id="buttons-view"></div>
+        </div>
+        <div class="col-md-4">
+            <form id="animal-intake">
+                <button class="btn btn-primary btn-animal" id="add-animal" type="submit" value="Add an animal">Add an Animal</button>
+                <input type="text" id="animal-input" class="btn-animal">                
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 center-block">
+            <div id="the-gifs">
+            </div>
+        </div>
+        <div class="col-md-4 center-block">
+            <div class="fav-animal-header">
+                <span class="fav-animal-span">favorites</span>
+            </div>
+            <div id="the-favs">
+            </div>
+        </div>
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
 
 </html>
